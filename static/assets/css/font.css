@@ -1,0 +1,123 @@
+#tab-tab-logout {
+    
+}
+
+.px-65 {
+    padding-left: 65px;
+    padding-right: 65px;
+}
+.service-wrap-items {
+    display: flex;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin-bottom: 30px;
+}
+.service-wrap-items h1 {
+    line-height: 1.4;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+.service-left-item {
+    width: 35%;
+    margin-right: 15px;
+    overflow: hidden;
+}
+.service-right-item {
+    width: 65%;
+    padding-left: 15px;
+}
+.service-left-title {
+    font-weight: bold;
+    font-size: 30px;
+    position: relative;
+}
+.service-left-title:after {
+    content: '';
+    position: absolute;
+    border-right: 1px solid #000;
+    top: 100%;
+    right: 1px;
+    height: 1000px;
+}
+.service-inner-text {
+    margin-bottom: 60px;
+    line-height: 2.3;
+}
+.table-striped>tbody>tr:nth-of-type(odd) {
+    background-color: rgb(251, 252, 254);
+}
+.table-striped>tbody>tr:nth-of-type(even) {
+    background-color: rgb(245, 246, 250);
+}
+.table-bordered>tbody>tr>td,
+.table-bordered>tbody>tr>th,
+.table-bordered>tfoot>tr>td,
+.table-bordered>tfoot>tr>th,
+.table-bordered>thead>tr>td,
+.table-bordered>thead>tr>th,
+.table-bordered {
+    border: none;
+}
+.table>tbody>tr>td, .table>tbody>tr>th,
+.table>tfoot>tr>td, .table>tfoot>tr>th,
+.table>thead>tr>td, .table>thead>tr>th {
+    padding: 15px;
+}
+.custom-thead {
+    display: flex;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    justify-content: space-between;
+    position: relative;
+    color: #888;
+}
+.custom-thead div {
+    padding: 15px;
+    width: 100%;
+}
+
+.custom-thead div.active {
+    border-bottom: 2px solid #27c2d3;
+}
+
+@media (max-width: 990px) {
+    .service-wrap-header {
+        flex-wrap: wrap;
+    }
+    .service-wrap-header .service-left-item {
+        width: 100%;
+    }
+    .service-wrap-header .service-right-item {
+        width: 100%;
+    }
+    .service-wrap-header .service-left-item .text-right div {
+        text-align: center;
+    }
+}
+@media (max-width: 767px) {
+    .px-65 {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .service-inner-text {
+        margin-bottom: 0px;
+    }
+
+    .service-wrap-items {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    .service-left-item {
+        margin-right: 0px;
+    }
+    .table>tbody>tr>td, .table>tbody>tr>th,
+    .table>tfoot>tr>td, .table>tfoot>tr>th,
+    .table>thead>tr>td, .table>thead>tr>th {
+        padding: 15px 0px;
+    }
+    .table-responsive {
+        border: none;
+    }
+    .service-right-item.in-services {
+        width: 100%;
+    }
+}
